@@ -1,19 +1,27 @@
 import React, { useState } from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
+<<<<<<< HEAD
 import EditIcon from '@mui/icons-material/Edit';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';    
 import "./list.css"
+=======
+
+>>>>>>> 7656bacfb75af54c398f49419c342b968ad12dfd
 
 function List() {
     const [input, setInputvlaue] = useState('')
     const [listitem, setlistitem] = useState([])
+<<<<<<< HEAD
     const [edit, setediting] = useState(false);
     const [markedone, setmarkdone] = useState([])
+=======
+>>>>>>> 7656bacfb75af54c398f49419c342b968ad12dfd
 
     function handler(e) {
         setInputvlaue(e.target.value)
     }
 
+<<<<<<< HEAD
 
     function handlesubmit(e) {
         e.preventDefault()
@@ -59,6 +67,22 @@ function List() {
 
 
 
+=======
+    function handlesubmit(e) {
+        e.preventDefault()
+        setlistitem([...listitem, input])
+        setInputvlaue(" ")
+    }
+
+    function handeldelete(item){
+        setlistitem(
+        listitem.filter((li) =>{
+            return li !==item
+        
+        }))
+    }
+
+>>>>>>> 7656bacfb75af54c398f49419c342b968ad12dfd
     return (
         <>
             <h1>To Do list</h1>
@@ -73,6 +97,7 @@ function List() {
 
             <ul>
                 {
+<<<<<<< HEAD
                     listitem.map((element, index) => {
                         return (
 
@@ -90,6 +115,16 @@ function List() {
                         );
                     }
                     )
+=======
+                   listitem.map((element,index) => {
+                    return(
+                    <li key={index} 
+                    >{element}<DeleteIcon onClick={() => handeldelete(element)} />
+                    </li>
+                    );
+                   }
+                   )
+>>>>>>> 7656bacfb75af54c398f49419c342b968ad12dfd
                 }
             </ul>
         </>
