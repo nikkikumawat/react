@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    background-position:center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+}                                                  
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li {
+    list-style: none;
+}
+.header ul a{
+    text-decoration: none;
+    color: black;
+    margin: 0 0.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.car{
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.model{
+    padding-top: 3.8rem;
+    font-size: 22px;
+}
+.order{
+    text-align: center;
+    padding-top: 20rem;
+    font-size: 18px;
+}
+.model p{
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.order a:first-child{
+    margin: 1rem 1rem;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: inline-block;
+}
+.order a:last-child{
+    margin: 1rem 1rem;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 40px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.black{
+    background-color: rgba(0,0,0,0.5) !important;
+}
+section{
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Menu{
+    background-color: white;
+    display: inline-block;
+    height: 100vh;
+    position: absolute;
+    width: 20%;
+    /* display: none; */
+    right: -1px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.6s ease-in-out;
+}
+.Menu li{
+    list-style: none;
+    margin: 0.7rem 1.5rem;
+    font-size: 17px;
+}
+.Menu li a{                                            
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+}
+.close {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+.close:hover{
+    transform: rotate(260deg);
+    transition: all 0.6s ease-in-out;
+}
+.image img{
+    width: 50px;
+
+}
+
+
+/* @media all and (max-width) */
